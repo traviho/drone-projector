@@ -2,7 +2,7 @@
   "name": "controller",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3000/",
+  "proxy": "http://eb-node-express-socket-dev.us-east-1.elasticbeanstalk.com/",
   "dependencies": {
     "axios": "^0.17.1",
     "rc-slider": "^8.6.1",

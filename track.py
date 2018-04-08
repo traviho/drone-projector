@@ -55,7 +55,7 @@ while True:
               mouse.position= (sx - mouseX, mouseY)
               break
     
-    cv2.imshow("cam",img)
+    #cv2.imshow("cam",img)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 

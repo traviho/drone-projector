@@ -3,7 +3,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script>
-        var socket = io('http://localhost:3000');
+        //var socket = io('http://localhost:3000');
+        var socket = io('http://eb-node-express-socket-dev.us-east-1.elasticbeanstalk.com/');
         socket.on('connect', function(data) {
         });
         socket.on('direction', function(data) {
