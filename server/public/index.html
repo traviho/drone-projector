@@ -1,6 +1,5 @@
 <html>
   <head>
-    <title>WebSockets Test</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script>
@@ -11,16 +10,27 @@
           console.log(data.number)
           switch(data.number) {
             case 1:
-                // insert forward animation here
+                $('#direction').html(//forward
+                  "<img src='img/forward.gif' style='max-height:75vh'><p style='font-size:2rem;'>Keep <b>FORWARD</b></p>"
+                )
                 break;
             case 2:
                 // insert left animation here
+                $('#direction').html(
+                  "<img src='img/left.gif' style='max-height:75vh'><p style='font-size:2rem;'>Make a <b>LEFT</b> here</p>"
+                )
                 break;
             case 3:
                 // insert right animation here
+                $('#direction').html(
+                  "<img src='img/right.gif' style='max-height:75vh'><p style='font-size:2rem;'>Make a <b>RIGHT</b> here</p>"
+                )
                 break;
             case 4:
                 // insert backward animation here
+                $('#direction').html(
+                  "<img src='img/back.gif' style='max-height:75vh'><p style='font-size:2rem;color:red;'><b>TURN AROUND</b></p>"
+                )
                 break;
             }
         });
@@ -29,8 +39,38 @@
             // insert spotlight gif here
         });
     </script>
+
+  <title>HovAR @Bitcamp 2018</title>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+
+  <style>
+    body{
+        background-color: black;
+        color:white;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-align-items: center;
+        -webkit-flex-direction: column;
+        -webkit-font-smoothing: antialiased;
+        -webkit-justify-content: center;
+        font-family: 'IBM Plex Mono', monospace;
+        display: -webkit-flex;
+    }
+    #direction{
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-align-items: center;
+      -webkit-flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+      -webkit-justify-content: center;
+      display: -webkit-flex;
+    }
+    p{font-style: normal;font-weight:lighter;}
+    b{font-weight: bolder;}
+
+  </style>
   </head>
   <body>
-      
+    <div id='direction'>
+      <img src='img/forward.gif' style='max-height:75vh'><p style='font-size:2rem;'>Keep <b>Forward</b></p>
+    </div>
   </body>
 </html>
