@@ -35,8 +35,9 @@
             }
         });
         socket.on('spotlight', function(data) {
-            console.log('spotlight');
-            // insert spotlight gif here
+            $('#direction').html(
+              "<img src='img/spotlight.gif' style='max-height:100vh'>"
+            )
         });
     </script>
 
@@ -70,7 +71,7 @@
   </head>
   <body>
     <div id='direction'>
-      <img src='img/forward.gif' style='max-height:75vh'><p style='font-size:2rem;'>Keep <b>Forward</b></p>
+      <img src='img/spotlight.gif' style='max-height:100vh'>
     </div>
   </body>
 </html>
