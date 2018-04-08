@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 from pynput.mouse import Button, Controller
-import wx
+#from win32api import GetSystemMetrics
 mouse=Controller()
 
 lowerBound=np.array([150,30,40]) # hot pink
@@ -11,8 +11,10 @@ cam= cv2.VideoCapture(0)
 kernelOpen=np.ones((5,5))
 kernelClose=np.ones((20,20))
 
-app=wx.App(False)
-(sx,sy)=wx.GetDisplaySize()
+#app=wx.App(False)
+#(sx,sy)=wx.GetDisplaySize()
+sx = 1280
+sy = 720
 (camx,camy)=(320,240)
 
 while True:
