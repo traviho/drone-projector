@@ -7,6 +7,8 @@ path = require('path'),
 bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(__dirname + '/public'));
 
 io.on('connection', function (client) {
   console.log('connected');

@@ -20,8 +20,8 @@ class App extends Component {
       <div className="App">
         <div className="container">
           <div className="row">
-            <a className="waves-effect waves-light grey lighten-1 btn" onClick={() => this.direction(1)}>Left</a>
-            <a className="waves-effect waves-light grey lighten-1 btn" onClick={() => this.direction(2)}>Forward</a>
+            <a className="waves-effect waves-light grey lighten-1 btn" onClick={() => this.direction(1)}>Forward</a>
+            <a className="waves-effect waves-light grey lighten-1 btn" onClick={() => this.direction(2)}>Left</a>
             <a className="waves-effect waves-light grey lighten-1 btn" onClick={() => this.direction(3)}>Right</a>
             <a className="waves-effect waves-light grey lighten-1 btn" onClick={() => this.direction(4)}>Back</a>
           </div>
