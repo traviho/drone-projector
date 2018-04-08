@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>WebSockets Test</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script>
+        var socket = io('http://localhost:3000');
+        socket.on('connect', function(data) {
+        });
+        socket.on('direction', function(data) {
+          console.log(data.number)
+          switch(data.number) {
+            case 1:
+                // insert forward animation here
+                break;
+            case 2:
+                // insert left animation here
+                break;
+            case 3:
+                // insert right animation here
+                break;
+            case 4:
+                // insert backward animation here
+                break;
+            }
+        });
+        socket.on('spotlight', function(data) {
+            console.log('spotlight');
+            // insert spotlight gif here
+        });
+    </script>
+  </head>
+  <body>
+      
+  </body>
+</html>
